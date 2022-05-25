@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --rubik-font: "Rubik", sans-serif;
+  --primary-Blue: hsl(246, 80%, 60%);
+  --primary-Lightred-work: hsl(15, 100%, 70%);
+  --primary-Softblue-play: hsl(195, 74%, 62%);
+  --primary-Lightred-study: hsl(348, 100%, 68%);
+  --primary-Limegreen-exercise: hsl(145, 58%, 55%);
+  --primary-Violet-social: hsl(264, 64%, 52%);
+  --primary-Softorange-self-care: hsl(43, 84%, 65%);
+  --primary-white: hsl(0, 0%, 100%);
+
+  --neutral-Verydarkblue: hsl(226, 43%, 10%);
+  --neutral-Darkblue: hsl(235, 46%, 20%);
+  --neutral-Desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-blue-hover: hsl(236, 41%, 34%);
+  --neutral-PaleBlue: hsl(236, 100%, 87%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  /* background: url(images/mobile-design.jpg) no-repeat top; */
+  /* background: url(images/desktop-design.jpg) no-repeat center; */
+}
+
+body {
+  margin: 0;
+  font-family: var(--rubik-font);
+  background-color: var(--neutral-Verydarkblue);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.time-report-app {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: repeat(2, 244px);
+  /* background-color: red; */
+  gap: 30px;
+}
+
+.user-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.work-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.play-container {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.study-container {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+.exercise-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.social-container {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.selfCare-container {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.user-container,
+.work-container,
+.play-container,
+.study-container,
+.exercise-container,
+.social-container,
+.selfCare-container,
+.user-content,
+.work-content,
+.play-content,
+.study-content,
+.exercise-content,
+.social-content,
+.selfCare-content {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: var(--neutral-Darkblue);
+  overflow: hidden;
+}
+
+.user-content {
+  background-color: var(--primary-Blue);
+  padding-left: 30px;
+  padding-top: 33px;
+  padding-right: 32px;
+  padding-bottom: 51px;
+}
+
+.user-profile {
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 78px;
+  height: 78px;
+  box-shadow: 0 0 0 3px hsl(0, 0%, 100%);
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.user-title {
+  font-size: 15px;
+  color: var(--neutral-PaleBlue);
+}
+
+.user-name {
+  font-weight: 300;
+  font-size: 41px;
+  margin-top: -13px;
+  color: var(--primary-white);
+}
+
+.switch-items {
+  padding-left: 0;
+  padding-top: 10px;
+}
+.switch-item {
+  padding-left: 32px;
+  padding-bottom: 20px;
+  list-style: none;
+  font-size: 18px;
+  color: var(--neutral-PaleBlue);
+  cursor: pointer;
+}
+
+.switch-item:hover {
+  color: var(--primary-white);
+}
+
+.active {
+  color: var(--primary-white);
+}
+
+.work-container {
+  background-color: var(--primary-Lightred-work);
+}
+.play-container {
+  background-color: var(--primary-Softblue-play);
+}
+.study-container {
+  background-color: var(--primary-Lightred-study);
+}
+.exercise-container {
+  background-color: var(--primary-Limegreen-exercise);
+}
+.social-container {
+  background-color: var(--primary-Violet-social);
+}
+.selfCare-container {
+  background-color: var(--primary-Softorange-self-care);
+}
+
+.icon-bg {
+  margin-top: -10px;
+  margin-left: 160px;
+  width: 80px;
+  height: 80px;
+}
+
+.options-icon {
+  cursor: pointer;
+  padding: 7px;
+}
+
+.activity-content {
+  position: relative;
+  margin-top: -27px;
+  padding-top: 13.5px;
+  padding-left: 30px;
+  padding-bottom: 8px;
+  padding-right: 23px;
+  background-color: var(--neutral-Darkblue);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  z-index: 1;
+}
+
+.activity-content:hover {
+  background-color: var(--neutral-blue-hover);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-title {
+  font-size: 18px;
+  color: var(--primary-white);
+}
+
+.current-time {
+  font-weight: 300;
+  margin-top: 9.5px;
+  font-size: 56px;
+  color: var(--primary-white);
+}
+.previous-time {
+  margin-top: -48px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: var(--neutral-PaleBlue);
+}
+
+@media screen and (max-width: 1127px) {
+
+  .time-report-app {
+    margin-top: 81px;
+    display: grid;
+    grid-template-columns: 327px;
+    grid-template-rows: 203px repeat(6, 160px);
+    /* background-color: red; */
+    gap: 24px;
+  }
+
+  .user-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+  }
+
+  .work-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .play-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .study-container {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .exercise-container {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .social-container {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .selfCare-container {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+
+  .user-content {
+    display: flex;
+    background-color: var(--primary-Blue);
+    padding-left: 30px;
+    padding-top: 33px;
+    padding-right: 32px;
+    padding-bottom: 9px;
+  }
+
+  .user-profile {
+    margin-left: 2px;
+    margin-top: 2px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 24px;
+    margin-right: 18px;
+  }
+  .user-title {
+    margin-top: 10px;
+  }
+  .user-name {
+    font-size: 24px;
+  }
+
+  .switch-items {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .switch-item:nth-of-type(2) {
+    margin-left: 12px;
+  }
+
+  .activity-content {
+    margin-top: -36px;
+    padding-left: 24px;
+    padding-right: 18px;
+  }
+
+  .icon-bg {
+    margin-left: 230px;
+  }
+
+  .activity-header {
+    margin-top: 0px;
+  }
+
+  .time-frames {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .current-time {
+    margin-top: -10px;
+    font-size: 32px;
+  }
+  .previous-time {
+    margin-top: -13px;
+    padding-right: 0;
+    margin-right: 5px;
+  }
+}

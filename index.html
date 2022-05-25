@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ <main class="app">
+
+  <div class="time-report-app">
+
+    <div class="user-container">
+      <div class="user-content">
+        <img class="user-profile" src="images/image-jeremy.png" alt="Jeremy Robson img">
+        <div class="user-info">
+          <p class="user-title">Report for</p>
+          <h1 class="user-name">Jeremy Robson</h1>
+        </div>
+        
+      </div>
+      <div class="switch-view">
+        <ul class="switch-items">
+          <li id="daily" class="switch-item">Daily
+          </li>
+          <li id="weekly" class="switch-item active">Weekly
+          </li>
+          <li id="monthly" class="switch-item">Monthly
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="work-container">
+      <img class="icon-bg" src="images/icon-work.svg" alt="icon-work">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Work</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+          <div class="current">
+          <h3 class="current-time"><span class="current-hours">32</span>hrs</h3>
+          </div>
+           <div class="previous">
+           <p class="previous-time">Last Week - <span class="previous-hours">36</span>hrs</p>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="play-container">
+      <img class="icon-bg" src="images/icon-play.svg" alt="icon-play">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Play</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+      <div class="current">
+        <h3 class="current-time"><span class="current-hours">10</span>hrs</h3>
+      </div>
+      <div class="previous">
+        <p class="previous-time">Last Week - <span class="previous-hours">8</span>hrs</p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="study-container">
+      <img class="icon-bg" src="images/icon-study.svg" alt="icon-study">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Study</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+      <div class="current">
+        <h3 class="current-time"><span class="current-hours">4</span>hrs</h3>
+      </div>
+      <div class="previous">
+        <p class="previous-time">Last Week - <span class="previous-hours">7</span>hrs</p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-container">
+      <img class="icon-bg" src="images/icon-exercise.svg" alt="icon-exercise">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Exercise</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+      <div class="current">
+        <h3 class="current-time"><span class="current-hours">4</span>hrs</h3>
+      </div>
+      <div class="previous">
+        <p class="previous-time">Last Week - <span class="previous-hours">5</span>hrs</p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-container">
+      <img class="icon-bg" src="images/icon-social.svg" alt="icon-social">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Social</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+      <div class="current">
+        <h3 class="current-time"><span class="current-hours">5</span>hrs</h3>
+      </div>
+      <div class="previous">
+        <p class="previous-time">Last Week - <span class="previous-hours">10</span>hrs</p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="selfCare-container">
+      <img class="icon-bg" src="images/icon-self-care.svg" alt="icon-self-care">
+      <div class="activity-content">
+        <div class="activity-header">
+          <h2 class="activity-title">Self Care</h2>
+          <span class="options-icon"><img src="images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time-frames">
+           <div class="current">
+             <h3 class="current-time"><span class="current-hours">2</span>hrs</h3>
+           </div>
+          
+           <div class="previous">
+              <p class="previous-time">Last Week - <span class="previous-hours">2</span>hrs</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div> 
+ </main>
+
+
+  
+  <div class="attribution"><span>Challenge by</span>
+   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/leoxr">Leoxr</a>.
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
